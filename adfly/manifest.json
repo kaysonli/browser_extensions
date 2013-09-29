@@ -1,0 +1,20 @@
+﻿{
+  "manifest_version": 2,
+  "name": "Auto-click Adfly",
+  "description": "This extension demonstrates a browser action with kittens.",
+  "version": "1.0",
+  "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*" ],
+  "icons": { "16": "click.png", "48": "click.png", "128": "click.png" },
+  "browser_action": {
+    "default_icon": "click.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://adf.ly/Vj1dG", "http://www.weibo.com/*", "http://weibo.com/*"],
+      "js": ["jquery1.7.js","click.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["jquery1.7.js", "background.js"]
+  }
+}
