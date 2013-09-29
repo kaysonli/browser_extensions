@@ -1,7 +1,7 @@
 {
-  "name" : "Click Sense",
+  "name" : "Visits Simulator",
   "version" : "0.8",
-  "description" : "Testing Cookie API",
+  "description" : "Simulate web page visit",
   "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*" ],
   "icons": { "16": "click.png", "48": "click.png", "128": "click.png" },
   "browser_action": {
