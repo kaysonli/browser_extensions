@@ -1,0 +1,22 @@
+{
+  "name" : "Click Sense",
+  "version" : "0.8",
+  "description" : "Testing Cookie API",
+  "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*" ],
+  "icons": { "16": "click.png", "48": "click.png", "128": "click.png" },
+  "browser_action": {
+    "default_icon": "click.png"
+  },
+  "background": {
+    "scripts": ["jquery1.7.js","manager.js","bg.js","cookie_helpers.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery1.7.js","click.js"],
+	  "run_at": "document_start",  
+      "all_frames": true   
+    }
+  ],
+  "manifest_version": 2
+}
